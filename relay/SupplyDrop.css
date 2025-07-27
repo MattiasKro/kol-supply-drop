@@ -1,0 +1,48 @@
+
+.section-title {
+    font-weight: bold;
+    background-color: rgb(217, 161, 101);
+    color: white;
+    margin: 0px;
+}
+
+/* was:   1px solid rgb(217, 161, 101); */
+.section {
+    border: none; 
+    margin: 5px;
+}
+
+.drop-button {
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 5px 15px;
+    cursor: pointer;
+    max-width: 250px;
+    height: 54px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 5px;
+}
+
+.disabled {
+    pointer-events: none;
+    border: 2px solid darkgray;
+    color: #ccc;
+}
+
+.drop-button img {
+    margin: 0;
+    vertical-align: middle; 
+    -ms-transform: translateY(30%);
+    transform: translateY(30%);
+    pointer-events: auto;
+}
+
+.drop-text {
+    pointer-events: auto;
+    align-self: center;
+    font-size: 12px;
+    width: 200px;
+}
