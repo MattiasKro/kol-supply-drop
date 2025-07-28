@@ -41,10 +41,6 @@ boolean [string] findUnlockedDrops(string page) {
         foreach ix, code in codes {
             available[trim(code)] = true;
         }
-
-        foreach code in available {
-            print("Code '" + code + "'");
-        }
     }
 
     return available;
