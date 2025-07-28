@@ -9,7 +9,7 @@ string [int, int] buttonData = {
     {"Handheld Allied radio", "Save a supply drop for later.<br>Or sell it for profit.", "radiopackradio.gif", "radio"},
     {"Salary", "15 Chronerz", "chroner.gif", "salary"},
     {"Sniper Support", "Force a non-combat", "bountyrifle.gif", "sniper support"},
-    {"Materiel Intel", "10 turns of +100% item drops", "dinseybrain.gif", "material intel"},
+    {"Materiel Intel", "10 turns of +100% item drops", "dinseybrain.gif", "materiel intel"},
     {"Ellipsoidtine", "30 turns of +25 Max MP, +50 Max HP, Regen 5-10 MP per Adventure", "circle.gif", "ellipsoidtine"}
 };
 
@@ -76,7 +76,7 @@ string createButtonPane(boolean [string] available) {
     }
     foreach btn in available {
         if (!found[btn]) {
-            buttons.append(createDropButton(btn, "???", "confused", btn, available));
+            buttons.append(createDropButton(btn, "???", "confused.gif", btn, available));
         }
     }
     buttons.append('</div><p>&nbsp;</p>\n');
