@@ -103,7 +103,7 @@ string handleSupplyDrop(string origPage) {
     newPage = old.replace_string(replaceText, newIntroText);
 
     newPage.replace_string("</head>", "<script type=\"text/javascript\" src=\"SupplyDrop.js\"></script></head>");
-    newPage.replace_string("</head>", '<link rel="stylesheet" type="text/css" href="SupplyDrop.css\"></head>');
+    newPage.replace_string("</head>", '<link rel="stylesheet" type="text/css" href="SupplyDrop.css"></head>');
 
     return newPage;
 }
