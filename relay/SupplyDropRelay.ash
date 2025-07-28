@@ -1,6 +1,4 @@
-string replaceText = "A label on the radio backpack lists things you can request, except only the first three are legible: rations, fuel, and ordnance.";
 string newIntroText = "Some nifty buttons on the radio backpack lists the things you can request.";
-string foundText = "Underneath that you scratched: ";
 
 string [int, int] buttonData = {
     {"Skeleton Wars rations", "1 fullness <font color='blueviolet'>EPIC</font> food<br>5 adv", "skelration.gif", "rations"},
@@ -24,7 +22,7 @@ string trim(string inStr) {
     return inStr;
 }
 
-boolean [string] findUnlockedDrops(string page) {
+boolean [string] findUnlockedDrops(string page, string foundText) {
     boolean [string] available = {
         "rations": true,
         "fuel": true,
@@ -85,12 +83,12 @@ string createButtonPane(boolean [string] available) {
     return buttons;
 }
 
-string handleSupplyDrop(string origPage) {
+string handleSupplyDrop(string origPage, string replaceText, string foundText) {
     buffer old;
     buffer newPage;
 
     old.append(origPage);
-    boolean [string] available = findUnlockedDrops(origPage);
+    boolean [string] available = findUnlockedDrops(origPage, foundText);
 
     int startPos = old.index_of(replaceText);
     int endPos = old.index_of('<form');
