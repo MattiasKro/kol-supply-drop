@@ -7,8 +7,8 @@ string [int, int] buttonData = {
     {"Handheld Allied radio", "Save a supply drop for later.<br>Or sell it for profit.", "radiopackradio.gif", "radio"},
     {"Salary", "15 Chronerz", "chroner.gif", "salary"},
     {"Sniper Support", "Force a non-combat", "bountyrifle.gif", "sniper support"},
-    {"Materiel Intel", "10 turns of +100% item drops", "dinseybrain.gif", "materiel intel"},
-    {"Wildsun boon", "100 turns of +3 all res, +5 famweight, +50% all dmg (+200% vs skeletons), +75% init", "wild_sun.gif", "wildsun boon"},
+    {"Materiel Intel (1/day)", "10 turns of +100% item drops", "dinseybrain.gif", "materiel intel"},
+    {"Wildsun boon (1/day)", "100 turns of +3 all res, +5 famweight, +50% all dmg (+200% vs skeletons), +75% init", "wild_sun.gif", "wildsun boon"},
     {"Ellipsoidtine", "30 turns of +25 Max MP, +50 Max HP, Regen 5-10 MP per Adventure", "circle.gif", "ellipsoidtine"}
 };
 
